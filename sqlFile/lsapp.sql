@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 04, 2019 at 09:55 PM
+-- Generation Time: Feb 04, 2019 at 10:06 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -69,15 +69,6 @@ CREATE TABLE `posts` (
   `user_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `posts`
---
-
-INSERT INTO `posts` (`id`, `title`, `body`, `created_at`, `updated_at`, `user_id`) VALUES
-(18, 'Hello World from User test2', '<p>Hello From User test2</p>', '2019-02-04 13:40:29', '2019-02-04 13:40:29', 3),
-(17, 'Hello World From User test Test1', '<p>Hello from User test Test1</p>', '2019-02-04 13:39:03', '2019-02-04 13:39:03', 2),
-(16, 'Hello World from User Ali Wehbi', '<p>Hello From Ali Wehbi</p>', '2019-02-04 13:38:21', '2019-02-04 13:38:21', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -93,15 +84,6 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'ALi Wehbi', 'cce.ali.wehbi@gmail.com', '$2y$10$wJS1umMD5yPx1buxFlMmkeAkf5BGln6nIcCHGpcV/rQUaaiIT8Gja', 'YwLOLJoTcFbBwSYS4CQlkjqJFQbl66fGFZ2rHaHJXpSLa1hxjBLdsyrdgcUf', '2019-02-04 10:44:07', '2019-02-04 10:44:07'),
-(2, 'test Test1', 'test@gmail.com', '$2y$10$ZrMON7lflYQgY7T2HyZkW.4lfaBw4/QuIVovaPAouqetvXKARJJ9G', 'TfyD0unfE3uYb7ovquhYFi5ati4EHgxlOmovyLITyQauDzYNFeCidRsC0ieF', '2019-02-04 12:24:07', '2019-02-04 12:24:07'),
-(3, 'test2', 'test2@gmail.com', '$2y$10$13Waup.BmuuitouN2AY0u.ejZBtMgNiem0XnTe9WzCJdTx7vuDFY6', 'RX1R4OwmoNy9u0ObzW0JAf9gVunTbFb7gDca21uq83iJj6MuSHBeW2grANvy', '2019-02-04 13:03:43', '2019-02-04 13:03:43');
 
 --
 -- Indexes for dumped tables
